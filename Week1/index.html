@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERN Stack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        #head {
+            background-color: #101253;
+            color: white;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        figure {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        figcaption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+        #par {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .content-box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #101253;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        #p1 {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: left;
+        }
+
+        #p2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+        #table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            width: 80px;
+            height: 80px;
+            border: 3px solid black;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #101253;
+            background-color: #f8f8f8;
+            transition: 0.3s;
+        }
+
+        th:hover, td:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        #form-container {
+            background-color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #101253;
+            border-radius: 5px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #ff6b6b;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #4D84DE;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #101253;
+        }
+        @media (max-width: 768px) {
+            #par {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #table-container,
+            #form-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="head">MERN Stack</div>
+    <div id="main">
+        <figure>
+            <img src="download.jpeg" alt="MERN">
+            <figcaption>MERN Stack Overview</figcaption>
+        </figure>
+    </div>
+    <div id="par">
+        <div class="content-box">
+            <h3>What is MERN?</h3>
+            <p id="p1">
+                Web development refers to the creating, building, and maintaining of websites. 
+                One of the most popular stacks for web development is the MERN stack. 
+                This stack provides an end-to-end framework, including MongoDB, Express, React, and Node.js. 
+                It makes the development process efficient and streamlined.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h3>How to Become a MERN Developer</h3>
+            <p id="p2">
+                Full-Stack Developers, especially MERN developers, are in high demand. 
+                They specialize in building web applications using JavaScript-based technologies. 
+                Mastering MERN stack allows you to develop modern, scalable, and efficient web applications.
+            </p>
+        </div>
+    </div>
+    <div id="table-container">
+        <h3>Tic-Tac-Toe</h3>
+        
+        <table>
+            <tr>
+                <th>O</th>
+                <th>X</th>
+                <th>X</th>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>O</td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>X</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="form-container">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
